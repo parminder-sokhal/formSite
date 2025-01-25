@@ -14,13 +14,13 @@ export const getAllCities = async (req, res, next) => {
 };
 
 export const createCity = async (req, res, next) => {
-  const { name } = req.body;
+  const { name,isLive } = req.body;
 
   if (!name) {
     return next(errorHandler(400, "City name is required"));
   }
 
-  const newCity = new City({ name });
+  const newCity = new City({ name,isLive });
 
   try {
     const city = await newCity.save();

@@ -3,7 +3,7 @@ import BaseModelSchema from "./Base.model.js";
 
 const CitySchema = new mongoose.Schema({
   name: { type: String, required: true },
-  ...BaseModelSchema.obj, // Inherit from BaseModel
+  ...BaseModelSchema.obj, 
 });
 
 const City = mongoose.model("City", CitySchema);

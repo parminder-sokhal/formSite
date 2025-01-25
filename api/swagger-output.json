@@ -100,6 +100,9 @@
               "properties": {
                 "name": {
                   "example": "any"
+                },
+                "isLive": {
+                  "example": "any"
                 }
               }
             }
